@@ -2,27 +2,31 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Spacegt Docs",
-  description: "A VitePress Site",
+  title: "SpaceGT",
+  description: "A super handy toolset",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Document', link: '/document' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Document',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
+          { text: 'Markdown Examples', link: '/document' },
           { text: 'Runtime API Examples', link: '/api-examples' }
         ]
       }
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    search: {
+      provider: 'local'
+    },
+
+    footer: {
+      copyright: 'Copyright © 2022-present Spacegt'
+    }
   }
 })

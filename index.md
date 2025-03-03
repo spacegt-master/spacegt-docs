@@ -3,16 +3,15 @@
 layout: home
 
 hero:
-  name: "Spacegt Docs"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "SpaceGT"
+  tagline: A super handy toolset
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Get Started
+      link: /document
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Download
+      link: https://www.spacegt.com
 
 features:
   - title: Feature A
